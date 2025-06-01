@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>file.d documentation</title>
+  <link rel="icon" type="image/png" href="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="A blazing fast tool for building data pipelines: read, process, and output events.">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://codepen.io/chriscoyier/pen/gHnGD.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+      @theme {
+        --breakpoint-xs: 30rem;
+      }
+    </style>
+</head>
+<body>
+<body class="bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 h-screen flex justify-center xs:py-20 xs:px-10">
+  <img id="bgImg" class="fixed h-screen w-screen top-0 left-0 object-cover" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+  
+  
+  <main class="sm:w-xl w-full border border-slate-800 xs:rounded-lg overflow-hidden shadow-lg grid grid-rows-[auto_1fr_auto] min-h-100 z-10">
+    <header class="py-2 px-4 bg-slate-800 shadow-lg flex items-center justify-between">
+      <div class="px-3 py-1 hover:bg-slate-700/50 rounded-lg transition cursor-pointer">
+        <h1 class="text-3xl font-bold text-white">Chat</h1>
+      </div>
+      <div class="flex items-center gap-2 px-3 py-1 hover:bg-indigo-500/50 rounded-lg transition cursor-pointer">
+        <p class="text-white text-xl">Mike</p>
+        <img class="rounded-full" src="https://placehold.co/40x40/png" alt="">
+      </div>
+    </header>
+    
+    <section class="bg-slate-800/70 overflow-y-scroll">
+      <div id="messageBox" class="flex flex-col gap-4 py-3 px-7 min-h-full justify-end">
+        
+        <div class="MESSAGE-L max-w-[80%] grid grid-cols-[auto_1fr] gap-x-2 self-start">
+          <img class="row-2 rounded-full shadow-lg border-2 border-indigo-500" src="https://placehold.co/45x45/png" alt="profile">
+          <div class="col-2 px-3 py-1 flex items-center gap-2">
+            <span class="NAME text-indigo-100 font-bold">Jerry</span>
+            <span class="TIMESTAMP text-indigo-100 text-sm">11:29 am</span>
+          </div>
+          <p class="MESSAGE col-2 p-3 bg-indigo-700 rounded-lg text-white shadow-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio porro.</p>
+        </div>
+        
+        <div class="MESSAGE-R max-w-[80%] grid gap-x-2 justify-items-end self-end">
+          <div class="col-2 px-3 py-1">
+            <span class="TIMESTAMP text-indigo-100 text-sm">11:39 am</span>
+          </div>
+          <p class="MESSAGE col-2 p-3 bg-purple-500 rounded-lg text-white shadow-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio porro.</p>
+        </div>
+        
+        <div class="DOTS text-white/50">Typing...</div>
+      </div>
+    </section>
+    
+    <footer class="py-3 px-7 bg-slate-800">
+      <form id="sendForm" class="flex gap-2">
+        <input class="w-full py-2 px-4 border border-slate-300/70 hover:border-slate-300/90 focus:ring-2 focus:ring-purple-300/50 rounded-md outline-0 transition text-white placeholder:text-white/50" name="message" type="text" placeholder="What have you to say?" autocomplete="off">
+        <button class="py-2 px-4 bg-purple-700 hover:bg-purple-600 transition text-white rounded-md focus:ring-2 focus:ring-purple-300/50 cursor-pointer" type="submit">Send</button>
+      </form>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+ </body>
+</html>
